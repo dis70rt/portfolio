@@ -39,11 +39,11 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              {...({ className: `${idx > 2 ? 'text-purple' : 'dark:text-white text-black'} text-center, text-4xl md:text-6xl lg:text-4xl`, 
+              {...({ className: `${idx > 2 ? 'text-purple' : 'dark:text-white text-black'} text-center, text-2xl md:text-6xl lg:text-4xl`, 
                 style: { filter: filter ? "blur(10px)" : "none" } 
               } as HTMLMotionProps<"span">)}
             >
-              {idx === 0 && word === "" ? <Cover className="text-8xl md:text-6xl lg:text-8xl">Saikat Das</Cover> : word+" "} 
+              {idx === 0 && word === "" ? <Cover className="text-6xl md:text-6xl lg:text-8xl">Saikat Das</Cover> : word+" "} 
               
               {/* {word}{" "} */}
             </motion.span>

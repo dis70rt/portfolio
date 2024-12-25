@@ -25,20 +25,20 @@ const techStacks = [
 
 const Stack = () => {
   return (
-    <section id="stack" className="p- bg-transparent z-10 h-72">
-      <div className="text-start capitalize p-6 font-bold text-white mb-8 lg:px-24">
+    <section id="stack" className="bg-transparent z-10 lg:h-72 h-52">
+      <div className="sm:text-start lg:text-center capitalize lg:pb-6 lg:py-0 font-bold text-white mb-8 lg:mx-auto">
         <TextGenerateEffect words={"What I work with"}></TextGenerateEffect>
       </div>
-      <div className="lg:max-w-6xl lg:mx-auto -my-8 flex flex-wrap justify-center items-center gap-6 lg:gap-12">
+      <div className="lg:max-w-6xl lg:mx-auto lg:-my-8 sm:-my-4 flex flex-wrap justify-center items-center gap-6 lg:gap-12">
         {techStacks.map((tech, index) => (
           <div
             key={index}
-            className="flex items-center gap-3 text-white text-sm font-medium transition-transform duration-300 transform hover:scale-110 lg:gap-5 lg:text-lg"
+            className="flex items-center gap-2 text-white text-xs font-medium transition-transform duration-300 transform hover:scale-110 lg:gap-5 lg:text-lg"
           >
-            <div className="text-4xl lg:text-6xl transition-all duration-300">
+            <div className="text-xl lg:text-6xl transition-all duration-300">
               {tech.icon}
             </div>
-            <p className="lg:text-xl">{tech.name.toUpperCase()}</p>
+            <p className="lg:text-xl text-sm">{tech.name.toUpperCase()}</p>
           </div>
         ))}
       </div>

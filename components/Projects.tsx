@@ -12,7 +12,7 @@ export const Projects = () => {
           A small selection of{"\n"}
           <span className="text-purple">recent projects</span>
         </h1>
-        <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+        <div className="flex flex-wrap items-center justify-center lg:grid lg:grid-cols-4 sm:grid-cols-1 lg:p-4 gap-16 mt-10 sm:gap-0">
           {projects.map((item) => (
             <div
               className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
