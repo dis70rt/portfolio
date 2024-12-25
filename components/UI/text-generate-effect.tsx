@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate, HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Cover } from "./cover";
 
 export const TextGenerateEffect = ({
   words,
@@ -38,11 +39,13 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              {...({ className: `${idx > 0 ? 'text-purple' : 'dark:text-white text-black'} text-center, text-[100px] md:text-5xl lg:text-6xl`, 
+              {...({ className: `${idx > 2 ? 'text-purple' : 'dark:text-white text-black'} text-center, text-4xl md:text-6xl lg:text-4xl`, 
                 style: { filter: filter ? "blur(10px)" : "none" } 
               } as HTMLMotionProps<"span">)}
             >
-              {word}{" "}
+              {idx === 0 && word === "" ? <Cover className="text-8xl md:text-6xl lg:text-8xl">Saikat Das</Cover> : word+" "} 
+              
+              {/* {word}{" "} */}
             </motion.span>
           );
         })}

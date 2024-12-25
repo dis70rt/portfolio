@@ -3,6 +3,7 @@ import { Spotlight } from "./UI/spotlights";
 import { TextGenerateEffect } from "./UI/text-generate-effect";
 import { MagicButton } from "./UI/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { Cover } from "./UI/cover";
 
 const Hero = () => {
   return (
@@ -30,14 +31,15 @@ const Hero = () => {
 
             <TextGenerateEffect 
             className="text-center"
-            words={"Saikat Das"} />
+            words={""} />
+            {/* <Cover>Saikat Das</Cover> */}
 
-            <p className="tracking-widest text-center uppercase md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+            <p className="tracking-widest text-center uppercase md:tracking-wider mb-4 text-sm md:text-sm md:py-3 lg:text-lg lg:py-3 lg:text-neutral-400">
               Student at IIT-BHU, Varanasi, India
             </p>
 
             <a href="#about">
-              <MagicButton title="Show my work " icon={<FaLocationArrow />} position="right"/>
+              <MagicButton title="Show my work" icon={<FaLocationArrow />} position="right"/>
             </a>
         </div>
       </div>
