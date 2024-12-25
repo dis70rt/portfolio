@@ -1,5 +1,6 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import { Projects } from "@/components/Projects";
 import Stack from "@/components/Stack";
 import { Divider } from "@/components/UI/Divider";
 import { FloatingNav } from "@/components/UI/FloatingNav";
@@ -15,6 +16,7 @@ export default function Home() {
         <Hero/>
         <Stack/>
         <Divider/>
+        <Projects/>
         {/* <Grid/> */}
         
       </div>
