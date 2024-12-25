@@ -1,25 +1,23 @@
-import { FaPython, FaRust } from "react-icons/fa";
 import { PinContainer } from "./UI/Pin";
 import { projects } from "@/data/index";
-import { FaFlutter } from "react-icons/fa6";
-import { SiCodeforces, SiFirebase, SiStreamlit } from "react-icons/si";
 
 export const Projects = () => {
   return (
     <section id="projects">
-      <div className="relative">
+      <div className="relative mb-28">
         <h1 className="heading">
           A small selection of{"\n"}
           <span className="text-purple">recent projects</span>
         </h1>
-        <div className="flex flex-wrap items-center justify-center lg:grid lg:grid-cols-4 sm:grid-cols-1 lg:p-4 gap-16 mt-10 sm:gap-0">
+        {}
+        <div className="flex flex-wrap justify-center items-center gap-16 mt-10">
           {projects.map((item) => (
             <div
-              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+              className="lg:min-h-[32.5rem] lg:h-[25rem] h-[20rem] flex mx-auto items-center justify-center sm:w-96 w-[80vw] mb-8"
               key={item.id}
             >
               <PinContainer title={item.link} href={item.href}>
-                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] lg:mb-10 mb-2">
                   <div
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
@@ -51,8 +49,10 @@ export const Projects = () => {
 
                 <div className="flex items-center justify-between mt-7 mb-3">
                   <div className="flex items-center">
-                    {item.iconLists.map((icon) => (
-                      <div className="p-2">{icon}</div>
+                    {item.iconLists.map((icon, index) => (
+                      <div className="p-2" key={index}>
+                        {icon}
+                      </div>
                     ))}
                   </div>
                 </div>
