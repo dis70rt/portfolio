@@ -1,11 +1,14 @@
 import { AboutMe } from "@/components/AboutMe";
+import { Contact } from "@/components/Contact";
+import Copyright, {  } from "@/components/Copyright";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import Stack from "@/components/Stack";
 import { Divider } from "@/components/UI/Divider";
 import { FloatingNav } from "@/components/UI/FloatingNav";
-import { FaHome, FaProjectDiagram } from "react-icons/fa";
+import { FaCode, FaHome, FaPhone, FaProjectDiagram, FaUser } from "react-icons/fa";
+import { FaFaceSmile, FaPerson } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -17,9 +20,9 @@ export default function Home() {
         <FloatingNav
           navItems={[
             { name: "Home", link: "/", icon: <FaHome /> },
-            { name: "Projects", link: "#projects", icon: <FaProjectDiagram /> },
-            { name: "About Me", link: "#about", icon: <FaHome /> },
-            { name: "Contact", link: "#contact", icon: <FaHome /> },
+            { name: "Projects", link: "#projects", icon: <FaCode /> },
+            { name: "About Me", link: "#about", icon: <FaUser /> },
+            { name: "Contact", link: "#contact", icon: <FaPhone /> },
           ]}
         />
         <Hero />
@@ -30,6 +33,8 @@ export default function Home() {
         <Divider />
         <AboutMe />
         <Divider />
+        <Contact/>
+        <Copyright/>
       </div>
     </main>
   );

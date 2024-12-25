@@ -13,7 +13,7 @@ import {
 
 import { ShimmerButton } from "./UI/ShimmerButton";
 
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLocationDot, FaLocationPin, FaXTwitter } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -42,8 +42,10 @@ const Hero = () => {
           <TextGenerateEffect className="text-center" words={""} />
           {/* <Cover>Saikat Das</Cover> */}
 
-          <p className="tracking-widest text-center uppercase md:tracking-wider mb-4 text-xs text-neutral-400 md:text-sm md:py-3 lg:text-lg lg:py-3 lg:text-neutral-400">
-            Student at IIT-BHU, Varanasi, India
+          <p className="flex items-center justify-center tracking-widest text-center uppercase md:tracking-wider mb-4 text-xs text-neutral-400 md:text-sm md:py-3 lg:text-lg lg:py-3 lg:text-neutral-400">
+            <FaLocationDot className="mr-2" />{" "}
+            {/* Add margin to space out the icon */}
+            Varanasi, India
           </p>
 
           <a href="#projects">
