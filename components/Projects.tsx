@@ -1,6 +1,8 @@
 import { PinContainer } from "./UI/Pin";
 import { projects } from "@/data/index";
 
+import Image from "next/image";
+
 export const Projects = () => {
   return (
     <section id="projects">
@@ -22,10 +24,10 @@ export const Projects = () => {
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
                   >
-                    <img src="/bg.png" alt="bgimg" />
+                    <Image src="/bg.png" alt="bgimg" />
                   </div>
                   {item.img ? (
-                    <img
+                    <Image
                       src={item.img}
                       alt="cover"
                       className="z-10 absolute bottom-0"
