@@ -18,12 +18,13 @@ export default function Home() {
   const isHome = pathName === "/";
   const [isLoading, setIsLoading] = useState(isHome);
 
-  const [showSplash, setShowSplash] = useState(true);
+  const [, setShowSplash] = useState(true);
 
   useEffect(() => {
     if (isLoading) {
       setTimeout(() => {
         setIsLoading(false);
+        
       }, 3000);
     }
   }, [isLoading]);

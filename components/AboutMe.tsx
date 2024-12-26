@@ -38,7 +38,7 @@ export function AboutMe() {
       </h1>
       <div className="lg:text-xl text-neutral-500 leading-relaxed sm:text-left mb-8">
         <p className="">
-          Born in Jharkhand, India, I'm a 20-year-old college student with a
+          Born in Jharkhand, India, I&apos;m a 20-year-old college student with a
           sweet tooth for ice cream and a love for exploring new places. My
           dream is to give something meaningful to the world that has helped
           shape me into who I am today.
@@ -50,7 +50,7 @@ export function AboutMe() {
       <div className="flex items-center space-x-2 pb-16 rounded-lg shadow-md text-left">
         <FaUniversity className="text-xl" />
         <span className="text-lg font-bold tracking-wide text-gray-300">
-          Bachelor's Student | IIT-BHU
+          Bachelor&apos;s Student | IIT-BHU
         </span>
       </div>
     </section>

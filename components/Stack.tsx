@@ -3,9 +3,7 @@ import {
   FaReact,
   FaNodeJs,
   FaPython,
-  FaDatabase,
   FaRust,
-  FaGit,
   FaGithub,
   FaDocker,
 } from "react-icons/fa";
