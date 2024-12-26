@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Saikat's Portfolio",
+  title: "Saikat Das",
   description: "Modern Portfolio",
 };
 

@@ -62,15 +62,15 @@ export let projects = [
     link: "github.com",
     href: "https://github.com/dis70rt/otter",
   },
-  // {
-  //   id: 3,
-  //   title: "snake-rs",
-  //   des: "A simple Snake Game built in Rust using the egui crate.",
-  //   img: null,
-  //   iconLists: [<SiRust />],
-  //   link: "github.com",
-  //   href: "https://github.com/dis70rt/snake-rs",
-  // },
+  
+  
+  
+  
+  
+  
+  
+  
+  
   {
     id: 3,
     title: "cfrps",
