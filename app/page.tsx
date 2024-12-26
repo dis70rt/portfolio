@@ -1,14 +1,12 @@
 import { AboutMe } from "@/components/AboutMe";
 import { Contact } from "@/components/Contact";
 import Copyright, {  } from "@/components/Copyright";
-import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import Stack from "@/components/Stack";
 import { Divider } from "@/components/UI/Divider";
 import { FloatingNav } from "@/components/UI/FloatingNav";
-import { FaCode, FaHome, FaPhone, FaProjectDiagram, FaUser } from "react-icons/fa";
-import { FaFaceSmile, FaPerson } from "react-icons/fa6";
+import { FaCode, FaHome, FaPhone, FaUser } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -32,7 +30,6 @@ export default function Home() {
         <Projects />
         <Divider />
         <AboutMe />
-        <Divider />
         <Contact/>
         <Copyright/>
       </div>

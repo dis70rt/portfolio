@@ -1,22 +1,31 @@
-import { FaCopy } from "react-icons/fa";
-import { BackgroundGradientAnimation } from "./UI/Gradient";
+import { FaEnvelope } from "react-icons/fa";
 import { MagicButton } from "./UI/MagicButton";
+import { BorderBeam } from "./UI/Background";
 
 export const Contact = () => {
   return (
-    <section>
-      <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-      <div className="mt-5 relative">
-
-        <div className={`absolute -bottom-5 right-0 `}></div>
-
-        <MagicButton
-          title={"Copy Email"}
-          icon={<FaCopy />}
-          position="left"
-        //   otherClasses="!bg-[#161A31]"
-        />
+    <section id="contact" className="lg:p-4 lg:px-96 pr-1">
+      <div className="relative flex flex-col items-start font-bold bg-dot-blue-900 border border-purple/20 text-blue-100 rounded-3xl p-4">
+        <p className="text-4xl lg:text-4xl">
+          Like what you see? Reach out{" "}
+          <a
+            href="mailto:sd.saikat369@gmail.com"
+            className="text-blue-500 underline"
+          >
+            via email
+          </a>{" "}
+          to collaborate!
+        </p>
+        <a className="pt-8" href="mailto:sd.saikat369@gmail.com">
+          <MagicButton
+            title={"Email"}
+            icon={<FaEnvelope />}
+            position={"left"}
+          />
+        </a>
+        <BorderBeam />
       </div>
+      
     </section>
   );
 };

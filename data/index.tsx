@@ -1,4 +1,4 @@
-import { SiCodeforces, SiRust, SiStreamlit } from "react-icons/si";
+import { SiCodeforces, SiStreamlit } from "react-icons/si";
 
 export const gridItems = [
   {
