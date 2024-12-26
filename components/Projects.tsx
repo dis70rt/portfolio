@@ -24,12 +24,13 @@ export const Projects = () => {
                     className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                     style={{ backgroundColor: "#13162D" }}
                   >
-                    <Image src="/bg.png" alt="bgimg" />
+                    <Image src="/bg.png" alt="bgimg" layout="fill"/>
                   </div>
                   {item.img ? (
                     <Image
                       src={item.img}
                       alt="cover"
+                      layout="fill"
                       className="z-10 absolute bottom-0"
                     />
                   ) : null}
